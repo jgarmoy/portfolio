@@ -1,0 +1,43 @@
+---
+import Code from "../iconos/Code.astro"
+---
+<header>
+  <Code />
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 56px;
+    background-color: rgb(17, 24, 39);
+    padding: 0 30px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    header {
+      padding: 0 70px;
+    }
+  }
+</style>
