@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import imgDni from '@/multimedia/imagenes/imagendni-1-min.jpg';
+---
+
+<section>
+  <article>
+    <h1>Hola, soy Juan Manuel</h1>
+    <p>Desarrollador web recién graduado, apasionado por crear soluciones digitales innovadoras.</p>
+  </article>
+  <article>
+    <Image src={imgDni} alt="Imagen tipo DNI">
+  </article>
+</section>
+
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(17, 24, 39);
+    color: white;
+    padding-top: 40px;
+    & > * {
+      width: 90%;
+      margin: 0 auto;
+    }
+    & > article:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2%;
+    }
+  }
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+
+  @media screen and (min-width: 1024px) {
+    article {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+</style>

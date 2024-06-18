@@ -1,18 +1,20 @@
 ---
+import { Image } from 'astro:assets'
+
 interface Props {
   nombre: string
   descripcion: string
   desplegado: string
   github: string
   altImagen: string
-  srcImagen: string
+  srcId: string
 }
 
-const { nombre, descripcion, desplegado, github, altImagen, srcImagen } = Astro.props;
+const { nombre, descripcion, desplegado, github, altImagen, srcId } = Astro.props;
 ---
 
 <article>
-  <img src={srcImagen} alt={altImagen} />
+  <Image src={`/imagenes/${srcId}.jpg`} alt={altImagen} width="50" height="50" />
   <h3>{nombre}</h3>
   <p>{descripcion}</p>
   <a href={github}>Ver en GitHub</a>
@@ -20,3 +22,12 @@ const { nombre, descripcion, desplegado, github, altImagen, srcImagen } = Astro.
     <a href={desplegado}>Ver proyecto</a>
   )}
 </article>
+
+<style>
+  article {
+    display: flex;
+  }
+  img {
+    box-shadow: 100px;
+  }
+</style>

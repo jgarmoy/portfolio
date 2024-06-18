@@ -1,20 +1,21 @@
 ---
+import Proyectos from '@/components/Proyectos.astro';
 import Layout from '../layouts/Layout.astro';
+import SobreMi from '@/components/SobreMi.astro';
+import Habilidades from '@/components/Habilidades.astro';
 ---
 
 <Layout title="Bienvenido a mi portfolio">
 	<main>
-		<h1>hola mundo</h1>
+		<SobreMi />
+		<Proyectos />
+		<Habilidades />
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
+		margin: 0 auto;
 		font-size: 20px;
 		line-height: 1.6;
 	}
