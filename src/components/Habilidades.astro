@@ -39,6 +39,8 @@ import herramientas from '@/json/herramientas.json'
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
   }
   article:last-child {
     display: grid;
@@ -51,7 +53,7 @@ import herramientas from '@/json/herramientas.json'
   }
   article > div {
     position: relative;
-    height: 350px;
+    height: 300px;
     padding: 15px;
     background-color: rgb(17, 24, 39);
     border-radius: 0.75rem;
@@ -60,6 +62,10 @@ import herramientas from '@/json/herramientas.json'
 
   ul {
     list-style: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     & > li {
       margin-left: 3px;
     }
