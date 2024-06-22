@@ -1,10 +1,8 @@
 ---
-import { Image } from 'astro:assets'
-
 interface Props {
   nombre: string
   descripcion: string
-  desplegado: string
+  desplegado: string | undefined
   github: string
   altImagen: string
   srcId: string
@@ -13,21 +11,42 @@ interface Props {
 const { nombre, descripcion, desplegado, github, altImagen, srcId } = Astro.props;
 ---
 
-<article>
-  <!-- <Image src={`/imagenes/${srcId}.jpg`} alt={altImagen} width="50" height="50" /> -->
+<div class="div-principal">
+  <img src={`/src/multimedia/imagenes/proyectos/${srcId}.png`} alt={altImagen} width="100" />
   <h3>{nombre}</h3>
   <p>{descripcion}</p>
-  <a href={github}>Ver en GitHub</a>
-  {desplegado && (
-    <a href={desplegado}>Ver proyecto</a>
-  )}
-</article>
+  <div>
+    <a href={github} target="_blank">Ver en GitHub</a>
+    {desplegado && (
+      <a href={desplegado}>Ver proyecto</a>
+    )}
+  </div>
+</div>
 
 <style>
-  article {
+  .div-principal {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 450px;
+  }
+  p {
+    height: 100px;
+    overflow-y: auto;
   }
   img {
-    box-shadow: 100px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  a {
+    width: 140px;
+    height: max-content;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
   }
 </style>

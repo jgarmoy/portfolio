@@ -6,10 +6,14 @@ import imgDni from '@/multimedia/imagenes/imagendni-1-min.jpg';
 <section>
   <article>
     <h1>Hola, soy Juan Manuel</h1>
-    <p>Desarrollador web recién graduado, apasionado por crear soluciones digitales innovadoras.</p>
+    <p>+ 14 meses de experiencia laboral y 3 meses de experiencia en el sector. Graduado en desarrollo de aplicaciones web y buscando trabajo.</p>
   </article>
   <article>
     <Image src={imgDni} alt="Imagen tipo DNI">
+  </article>
+  <article>
+    <p>622 67 12 51</p>
+    <p>juanmi_4000@hotmail.es</p>
   </article>
 </section>
 
@@ -26,11 +30,19 @@ import imgDni from '@/multimedia/imagenes/imagendni-1-min.jpg';
       width: 90%;
       margin: 0 auto;
     }
-    & > article:last-child {
+    & > article:nth-child(2) {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 2%;
+    }
+    & > article:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2%;
+      width: 80%;
     }
   }
   img {
@@ -46,6 +58,10 @@ import imgDni from '@/multimedia/imagenes/imagendni-1-min.jpg';
     article {
       max-width: 700px;
       margin: 0 auto;
+    }
+    section > article:last-child {
+      flex-direction: row;
+      width: 30%;
     }
   }
 </style>

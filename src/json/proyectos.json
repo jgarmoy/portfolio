@@ -2,9 +2,16 @@
   {
     "nombre": "Anime API",
     "descripcion": "Descripción",
-    "github": "",
-    "desplegado": "",
-    "srcId": "",
-    "altImagen": ""
+    "github": "https://github.com/juanmi4000/api-web-proyecto-tfg",
+    "desplegado": "https://frontend-tfg-deploy.vercel.app/z",
+    "srcId": "anime-api",
+    "altImagen": "Imagen de Anime API, proyecto de una api que proporciona animes, géneros y usuarios"
+  },
+  {
+    "nombre": "Alquiler vehículos",
+    "descripcion": "Proyecto realizado con Java. Es una aplicación para gestionar los vehículos y alquileres que realiza un cliente.",
+    "github": "https://github.com/juanmi4000/api-web-proyecto-tfg",
+    "srcId": "anime-api",
+    "altImagen": "Imagen de Anime API, proyecto de una api que proporciona animes, géneros y usuarios"
   }
 ]

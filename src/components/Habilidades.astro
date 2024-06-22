@@ -4,9 +4,9 @@ import backend from '@/json/backend.json'
 import herramientas from '@/json/herramientas.json'
 ---
 
-<section>
+<section id="habilidades">
   <article>
-    <h2>Mis Habilidades técnicas</h2>
+    <h2>Mis habilidades técnicas</h2>
     <p>Tecnologías y habilidades que domino.</p>
   </article>
   <article>
@@ -42,6 +42,9 @@ import herramientas from '@/json/herramientas.json'
     width: 90%;
     margin: 0 auto;
   }
+  article:first-child {
+    text-align: center;
+  }
   article:last-child {
     display: grid;
     gap: 1.5rem;
@@ -72,7 +75,11 @@ import herramientas from '@/json/herramientas.json'
   }
 
   @media screen and (min-width: 1024px) {
+    section {
+      width: 75%;
+    }
     article:last-child {
+      width: 100%;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 3rem;
   }
