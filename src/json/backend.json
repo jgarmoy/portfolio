@@ -13,5 +13,15 @@
   },
   {
     "herramienta": "TypeScript"
+  },
+  {
+    "herramienta": "Java"
+  },
+  {
+    "herramienta": "MySQL"
+  },
+  {
+    "herramienta": "MongoDB"
   }
 ]
+ 

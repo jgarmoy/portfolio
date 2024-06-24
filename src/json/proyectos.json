@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Anime API",
-    "descripcion": "Descripción",
+    "descripcion": "API realizada con Express, Astro y React. Proporciona animes, géneros y usuarios. Además de, poder realizar las operaciones básicas CRUD y filtrar animes por géneros.",
     "github": "https://github.com/juanmi4000/api-web-proyecto-tfg",
     "desplegado": "https://frontend-tfg-deploy.vercel.app/z",
     "srcId": "anime-api",
@@ -10,8 +10,8 @@
   {
     "nombre": "Alquiler vehículos",
     "descripcion": "Proyecto realizado con Java. Es una aplicación para gestionar los vehículos y alquileres que realiza un cliente.",
-    "github": "https://github.com/juanmi4000/api-web-proyecto-tfg",
-    "srcId": "anime-api",
+    "github": "https://github.com/juanmi4000/AlquilerVehiculos-v4",
+    "srcId": "alquiler-vehiculos",
     "altImagen": "Imagen de Anime API, proyecto de una api que proporciona animes, géneros y usuarios"
   }
 ]

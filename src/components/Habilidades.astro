@@ -56,7 +56,8 @@ import herramientas from '@/json/herramientas.json'
   }
   article > div {
     position: relative;
-    height: 300px;
+    height: min-content;
+    min-height: 450px;
     padding: 15px;
     background-color: rgb(17, 24, 39);
     border-radius: 0.75rem;
@@ -76,7 +77,7 @@ import herramientas from '@/json/herramientas.json'
 
   @media screen and (min-width: 1024px) {
     section {
-      width: 75%;
+      width: 1000px;
     }
     article:last-child {
       width: 100%;

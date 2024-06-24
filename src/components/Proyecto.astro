@@ -12,7 +12,7 @@ const { nombre, descripcion, desplegado, github, altImagen, srcId } = Astro.prop
 ---
 
 <div class="div-principal">
-  <img src={`/src/multimedia/imagenes/proyectos/${srcId}.png`} alt={altImagen} width="100" />
+  <img src={`/imagenes/proyectos/${srcId}.png`} alt={altImagen} width="100" />
   <h3>{nombre}</h3>
   <p>{descripcion}</p>
   <div>
@@ -36,7 +36,8 @@ const { nombre, descripcion, desplegado, github, altImagen, srcId } = Astro.prop
   }
   img {
     border-radius: 5px;
-    width: 100%;
+    width: min-content;
+    height: 200px;
   }
 
   a {

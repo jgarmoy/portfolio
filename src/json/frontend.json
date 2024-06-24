@@ -1,9 +1,9 @@
 [
   {
-    "herramienta": "HTML"
+    "herramienta": "HTML5"
   },
   {
-    "herramienta": "CSS"
+    "herramienta": "CSS3"
   },
   {
     "herramienta": "JavaScript"
@@ -13,5 +13,14 @@
   },
   {
     "herramienta": "React"
+  },
+  {
+    "herramienta": "Tailwindcss"
+  },
+  {
+    "herramienta": "Bootstrap"
+  },
+  {
+    "herramienta": "Astro"
   }
 ]
