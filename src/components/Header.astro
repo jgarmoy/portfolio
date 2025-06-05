@@ -1,44 +1,189 @@
 ---
-import Code from "../multimedia/iconos/Code.astro"
+import { Icon } from 'astro-icon/components';
 ---
-<header>
-  <a href="#"><Code /></a>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <!-- <li><a href="#experiencia">Experiencia</a></li> -->
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-    </ul>
-  </nav>
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-primary">JM</div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#inicio" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Inicio
+      </a>
+      <a href="#sobre-mi" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Sobre mí
+      </a>
+      <a href="#proyectos" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Proyectos
+      </a>
+      <a href="#habilidades" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Habilidades
+      </a>
+      <a href="#experiencia" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Experiencia
+      </a>
+      <a href="#contacto" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors">
+        Contacto
+      </a>
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+        <Icon name="lucide:sun" id="sun-icon" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+        <Icon name="lucide:moon" id="moon-icon" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Toggle -->
+    <div class="flex items-center md:hidden">
+      <button id="theme-toggle-mobile" class="p-2 mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+        <Icon name="lucide:sun" id="sun-icon-mobile" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+        <Icon name="lucide:moon" id="moon-icon-mobile" class="h-5 w-5 text-gray-700 dark:text-gray-200" />
+      </button>
+      <button id="mobile-menu-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle menu">
+        <Icon name="lucide:menu" id="menu-icon" class="h-6 w-6 text-gray-700 dark:text-gray-200" />
+        <Icon name="lucide:x" id="close-icon" class="h-6 w-6 text-gray-700 dark:text-gray-200 hidden" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+      <a href="#inicio" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Inicio
+      </a>
+      <a href="#sobre-mi" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Sobre mí
+      </a>
+      <a href="#proyectos" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Proyectos
+      </a>
+      <a href="#habilidades" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Habilidades
+      </a>
+      <a href="#experiencia" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Experiencia
+      </a>
+      <a href="#contacto" class="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2">
+        Contacto
+      </a>
+    </div>
+  </div>
 </header>
 
-<style>
-  header {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 56px;
-    background-color: rgb(17, 24, 39);
-    padding: 0 30px;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    & a {
-      text-decoration: none;
-      color: white;
+<script>
+  let currentTheme = 'light';
+  
+  // Función para aplicar el tema
+  function applyTheme(theme: string) {
+    const html = document.documentElement;
+    const sunIcons = document.querySelectorAll('#sun-icon, #sun-icon-mobile');
+    const moonIcons = document.querySelectorAll('#moon-icon, #moon-icon-mobile');
+    
+    if (theme === 'dark') {
+      html.classList.add('dark');
+      // En modo oscuro, mostrar icono de sol (para cambiar a claro)
+      sunIcons.forEach(icon => (icon as HTMLElement).style.display = 'none');
+      moonIcons.forEach(icon => (icon as HTMLElement).style.display = 'block');
+    } else {
+      html.classList.remove('dark');
+      // En modo claro, mostrar icono de luna (para cambiar a oscuro)
+      sunIcons.forEach(icon => (icon as HTMLElement).style.display = 'block');
+      moonIcons.forEach(icon => (icon as HTMLElement).style.display = 'none');
     }
+    
+    currentTheme = theme;
+    localStorage.setItem('theme', theme);
   }
-
-  @media screen and (min-width: 1024px) {
-    header {
-      padding: 0 70px;
+  
+  // Función para alternar el tema
+  function toggleTheme() {
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    applyTheme(newTheme);
+  }
+  
+  // Función para inicializar el tema
+  function initTheme() {
+    // Obtener tema guardado o preferencia del sistema
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    let initialTheme = 'light';
+    if (savedTheme) {
+      initialTheme = savedTheme;
+    } else if (prefersDark) {
+      initialTheme = 'dark';
     }
+    
+    applyTheme(initialTheme);
   }
-</style>
+  
+  // Manejar el menú móvil
+  function setupMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    
+    function toggleMenu() {
+      const isHidden = mobileMenu?.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu?.classList.remove('hidden');
+        menuIcon?.classList.add('hidden');
+        closeIcon?.classList.remove('hidden');
+      } else {
+        mobileMenu?.classList.add('hidden');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      }
+    }
+    
+    mobileMenuToggle?.addEventListener('click', toggleMenu);
+    
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.add('hidden');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      });
+    });
+  }
+  
+  // Cambiar el estilo del header al hacer scroll
+  function setupScrollHeader() {
+    const header = document.getElementById('header');
+    
+    function handleScroll() {
+      if (window.scrollY > 10) {
+        header?.classList.add('bg-white/90', 'dark:bg-gray-900/90', 'backdrop-blur-md', 'shadow-md');
+      } else {
+        header?.classList.remove('bg-white/90', 'dark:bg-gray-900/90', 'backdrop-blur-md', 'shadow-md');
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  }
+  
+  // Función principal de inicialización
+  function init() {
+    // Inicializar tema primero
+    initTheme();
+    
+    // Configurar event listeners para los botones de tema
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+    
+    themeToggle?.addEventListener('click', toggleTheme);
+    themeToggleMobile?.addEventListener('click', toggleTheme);
+    
+    // Configurar otras funcionalidades
+    setupMobileMenu();
+    setupScrollHeader();
+  }
+  
+  // Ejecutar al cargar la página
+  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('astro:page-load', init);
+</script>

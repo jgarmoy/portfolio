@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-2xl font-bold mb-2">
+          Juan Manuel <span class="text-[#4CA5EC]">García Moyano</span>
+        </h3>
+        <p class="text-gray-400">Desarrollador Web & Especializado en IA y Big Data</p>
+      </div>
+      <div class="flex space-x-4">
+        <a
+          href="https://github.com/jgarmoy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#4CA5EC] transition-colors"
+          aria-label="GitHub"
+        >
+          <Icon name="lucide:github" class="h-5 w-5" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/juan-manuel-garcia-moyano/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#4CA5EC] transition-colors"
+          aria-label="LinkedIn"
+        >
+          <Icon name="lucide:linkedin" class="h-5 w-5" />
+        </a>
+        <a
+          href="mailto:juanmanuelgarmoy@outlook.es"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#4CA5EC] transition-colors"
+          aria-label="Email"
+        >
+          <Icon name="lucide:mail" class="h-5 w-5" />
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+      <p>&copy; {currentYear} Juan Manuel García Moyano. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

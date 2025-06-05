@@ -1,0 +1,97 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const projects = [
+  {
+    title: "Sistema de Análisis Predictivo",
+    description:
+      "Plataforma de análisis predictivo para empresas utilizando algoritmos de machine learning para predecir tendencias de mercado.",
+    technologies: ["Python", "React", "MongoDB", "TensorFlow", "Docker"],
+    github: "https://github.com/juanmanuel/predictive-analysis",
+    demo: "https://predictive-demo.example.com",
+    image: "/placeholder.svg?height=300&width=500",
+  },
+  {
+    title: "Dashboard de Big Data",
+    description:
+      "Dashboard interactivo para visualización de grandes volúmenes de datos con filtros personalizables y generación de informes.",
+    technologies: ["Node.js", "D3.js", "Spark", "MySQL", "Power BI"],
+    github: "https://github.com/juanmanuel/big-data-dashboard",
+    image: "/placeholder.svg?height=300&width=500",
+  },
+  {
+    title: "API RESTful para Gestión de Recursos",
+    description:
+      "API completa para gestión de recursos empresariales con autenticación JWT y documentación automática.",
+    technologies: ["Django", "PostgreSQL", "Docker", "Swagger", "Redis"],
+    github: "https://github.com/juanmanuel/resource-api",
+    demo: "https://api-docs.example.com",
+    image: "/placeholder.svg?height=300&width=500",
+  },
+  {
+    title: "Aplicación Web Educativa",
+    description:
+      "Plataforma educativa con sistema de gestión de contenidos, evaluaciones automáticas y seguimiento de progreso.",
+    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
+    github: "https://github.com/juanmanuel/edu-platform",
+    demo: "https://edu-platform.example.com",
+    image: "/placeholder.svg?height=300&width=500",
+  },
+];
+---
+
+<section id="proyectos" class="py-20 lg:py-32 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-6 lg:px-12 xl:px-20 max-w-7xl">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 lg:mb-20 text-center reveal">
+      Mis <span class="text-[#4CA5EC]">Proyectos</span>
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      {projects.map((project) => (
+        <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+          <div class="h-56 lg:h-64 overflow-hidden">
+            <img
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          <div class="p-8">
+            <h3 class="text-xl lg:text-2xl font-bold mb-4 text-gray-800 dark:text-white">{project.title}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">{project.description}</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              {project.technologies.map((tech) => (
+                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div class="flex justify-between">
+              {project.github && (
+                <a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                >
+                  <Icon name="lucide:github" class="mr-2 h-4 w-4" />
+                  Código
+                </a>
+              )}
+              {project.demo && (
+                <a 
+                  href={project.demo} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-6 py-3 bg-[#4CA5EC] rounded-lg text-sm font-medium text-white hover:bg-[#4CA5EC]/90 transition-colors"
+                >
+                  <Icon name="lucide:external-link" class="mr-2 h-4 w-4" />
+                  Demo
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

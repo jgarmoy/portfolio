@@ -1,0 +1,179 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section id="contacto" class="py-20 lg:py-32 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-6 lg:px-12 xl:px-20 max-w-7xl">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 lg:mb-20 text-center reveal">
+      <span class="text-[#4CA5EC]">Contacta</span> Conmigo
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 max-w-6xl mx-auto">
+      <div class="reveal">
+        <h3 class="text-2xl lg:text-3xl font-semibold mb-8 text-gray-800 dark:text-white">Información de Contacto</h3>
+        <div class="space-y-8">
+          <div class="flex items-center">
+            <div class="w-16 h-16 rounded-full bg-[#4CA5EC]/10 flex items-center justify-center mr-6">
+              <Icon name="lucide:mail" class="h-6 w-6 text-[#4CA5EC]" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Email</p>
+              <a
+                href="mailto:juanmanuelgarmoy@outlook.es"
+                class="text-lg text-gray-800 dark:text-white hover:text-[#4CA5EC] dark:hover:text-[#4CA5EC] transition-colors"
+              >
+                juanmanuelgarmoy@outlook.es
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-16 h-16 rounded-full bg-[#4CA5EC]/10 flex items-center justify-center mr-6">
+              <Icon name="lucide:phone" class="h-6 w-6 text-[#4CA5EC]" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Teléfono</p>
+              <a
+                href="tel:+34622671251"
+                class="text-lg text-gray-800 dark:text-white hover:text-[#4CA5EC] dark:hover:text-[#4CA5EC] transition-colors"
+              >
+                +34 622 67 12 51
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-16 h-16 rounded-full bg-[#4CA5EC]/10 flex items-center justify-center mr-6">
+              <Icon name="lucide:github" class="h-6 w-6 text-[#4CA5EC]" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">GitHub</p>
+              <a
+                href="https://github.com/jgarmoy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lg text-gray-800 dark:text-white hover:text-[#4CA5EC] dark:hover:text-[#4CA5EC] transition-colors"
+              >
+                github.com/jgarmoy
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-16 h-16 rounded-full bg-[#4CA5EC]/10 flex items-center justify-center mr-6">
+              <Icon name="lucide:linkedin" class="h-6 w-6 text-[#4CA5EC]" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">LinkedIn</p>
+              <a
+                href="https://www.linkedin.com/in/juan-manuel-garcia-moyano/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lg text-gray-800 dark:text-white hover:text-[#4CA5EC] dark:hover:text-[#4CA5EC] transition-colors"
+              >
+                linkedin.com/in/juan-manuel-garcia-moyano/
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3 class="text-2xl lg:text-3xl font-semibold mb-8 text-gray-800 dark:text-white">Envíame un Mensaje</h3>
+        <form id="contact-form" class="space-y-6">
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Tu nombre"
+              required
+              class="w-full px-6 py-4 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4CA5EC] dark:bg-gray-800 dark:text-white text-lg"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Tu email"
+              required
+              class="w-full px-6 py-4 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4CA5EC] dark:bg-gray-800 dark:text-white text-lg"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              required
+              class="w-full px-6 py-4 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4CA5EC] dark:bg-gray-800 dark:text-white text-lg"
+            />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              placeholder="Tu mensaje"
+              required
+              class="w-full px-6 py-4 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4CA5EC] min-h-[180px] dark:bg-gray-800 dark:text-white text-lg resize-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#4CA5EC] hover:bg-[#4CA5EC]/90 text-white font-medium py-4 px-6 rounded-lg transition-colors flex items-center justify-center text-lg"
+          >
+            <Icon name="lucide:send" class="mr-3 h-5 w-5" /> Enviar Mensaje
+          </button>
+          <div id="form-status" class="mt-6 p-4 rounded-lg text-center hidden"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', setupForm);
+  document.addEventListener('astro:page-load', setupForm);
+  
+  function setupForm() {
+    const form = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    if (form && formStatus) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Mostrar estado de carga
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton?.innerHTML || '';
+        
+        if (submitButton) {
+          (submitButton as HTMLButtonElement).disabled = true;
+          submitButton.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            Enviando...
+          `;
+        }
+        
+        // Simular envío del formulario
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        // Mostrar mensaje de éxito
+        // formStatus.textContent = '¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.';
+        formStatus.textContent = 'Simula el envío del formulario. ¡Todavía en desarrollo!';
+        formStatus.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'dark:bg-red-900', 'dark:text-red-300');
+        formStatus.classList.add('bg-green-100', 'text-green-700', 'dark:bg-green-900', 'dark:text-green-300');
+        
+        // Resetear formulario
+        (form as HTMLFormElement).reset();
+        
+        // Restaurar botón
+        if (submitButton) {
+          (submitButton as HTMLButtonElement).disabled = false;
+          submitButton.innerHTML = originalButtonText;
+        }
+        
+        // Ocultar mensaje después de 5 segundos
+        setTimeout(() => {
+          formStatus.classList.add('hidden');
+        }, 5000);
+      });
+    }
+  }
+</script>

@@ -1,0 +1,60 @@
+---
+const skills = [
+  // Languages
+  { name: "Python", level: 90, category: "language" },
+  { name: "JavaScript", level: 85, category: "language" },
+  { name: "PHP", level: 75, category: "language" },
+
+  // Frameworks
+  { name: "React", level: 85, category: "framework" },
+  { name: "Node.js", level: 80, category: "framework" },
+  { name: "Django", level: 75, category: "framework" },
+
+  // Databases
+  { name: "MySQL", level: 85, category: "database" },
+  { name: "MongoDB", level: 80, category: "database" },
+
+  // Tools
+  { name: "Docker", level: 70, category: "tool" },
+  { name: "Power BI", level: 75, category: "tool" },
+  { name: "Spark", level: 65, category: "tool" },
+  { name: "Hadoop", level: 60, category: "tool" },
+];
+
+const categories = [
+  { id: "language", name: "Lenguajes" },
+  { id: "framework", name: "Frameworks" },
+  { id: "database", name: "Bases de Datos" },
+  { id: "tool", name: "Herramientas" },
+];
+---
+
+<section id="habilidades" class="py-20 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center reveal">
+      Mis <span class="text-[#4CA5EC]">Habilidades</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+      {categories.map((category) => (
+        <div class="reveal">
+          <h3 class="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-200">{category.name}</h3>
+          <div class="space-y-6">
+            {skills
+              .filter((skill) => skill.category === category.id)
+              .map((skill) => (
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
+                    <span class="text-gray-500 dark:text-gray-400">{skill.level}%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-level={skill.level}></div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
