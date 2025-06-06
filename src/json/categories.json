@@ -1,0 +1,6 @@
+[
+  { "id": "language", "name": "Lenguajes" },
+  { "id": "framework", "name": "Frameworks" },
+  { "id": "database", "name": "Bases de Datos" },
+  { "id": "tool", "name": "Herramientas" }
+]
