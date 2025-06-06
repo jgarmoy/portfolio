@@ -1,43 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
-
-const projects = [
-  {
-    title: "Sistema de Análisis Predictivo",
-    description:
-      "Plataforma de análisis predictivo para empresas utilizando algoritmos de machine learning para predecir tendencias de mercado.",
-    technologies: ["Python", "React", "MongoDB", "TensorFlow", "Docker"],
-    github: "https://github.com/juanmanuel/predictive-analysis",
-    demo: "https://predictive-demo.example.com",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "Dashboard de Big Data",
-    description:
-      "Dashboard interactivo para visualización de grandes volúmenes de datos con filtros personalizables y generación de informes.",
-    technologies: ["Node.js", "D3.js", "Spark", "MySQL", "Power BI"],
-    github: "https://github.com/juanmanuel/big-data-dashboard",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "API RESTful para Gestión de Recursos",
-    description:
-      "API completa para gestión de recursos empresariales con autenticación JWT y documentación automática.",
-    technologies: ["Django", "PostgreSQL", "Docker", "Swagger", "Redis"],
-    github: "https://github.com/juanmanuel/resource-api",
-    demo: "https://api-docs.example.com",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "Aplicación Web Educativa",
-    description:
-      "Plataforma educativa con sistema de gestión de contenidos, evaluaciones automáticas y seguimiento de progreso.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
-    github: "https://github.com/juanmanuel/edu-platform",
-    demo: "https://edu-platform.example.com",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-];
+import projects from '../json/projects.json';
 ---
 
 <section id="proyectos" class="py-20 lg:py-32 bg-gray-50 dark:bg-gray-800">
