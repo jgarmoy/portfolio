@@ -1,17 +1,182 @@
- [
-  { "name": "Python", "level": 90, "category": "language" },
-  { "name": "JavaScript", "level": 85, "category": "language" },
-  { "name": "PHP", "level": 75, "category": "language" },
-
-  { "name": "React", "level": 85, "category": "framework" },
-  { "name": "Node.js", "level": 80, "category": "framework" },
-  { "name": "Django", "level": 75, "category": "framework" },
-
-  { "name": "MySQL", "level": 85, "category": "database" },
-  { "name": "MongoDB", "level": 80, "category": "database" },
-
-  { "name": "Docker", "level": 70, "category": "tool" },
-  { "name": "Power BI", "level": 75, "category": "tool" },
-  { "name": "Spark", "level": 65, "category": "tool" },
-  { "name": "Hadoop", "level": 60, "category": "tool" }
+[
+  {
+    "name": "Python",
+    "level": 80,
+    "category": "language"
+  },
+  {
+    "name": "JavaScript",
+    "level": 90,
+    "category": "language"
+  },
+  {
+    "name": "PHP",
+    "level": 50,
+    "category": "language"
+  },
+  {
+    "name": "React",
+    "level": 55,
+    "category": "framework"
+  },
+  {
+    "name": "Node.js",
+    "level": 70,
+    "category": "framework"
+  },
+  {
+    "name": "Django",
+    "level": 70,
+    "category": "framework"
+  },
+  {
+    "name": "MySQL",
+    "level": 70,
+    "category": "database"
+  },
+  {
+    "name": "MongoDB",
+    "level": 80,
+    "category": "database"
+  },
+  {
+    "name": "Docker",
+    "level": 40,
+    "category": "tool"
+  },
+  {
+    "name": "Power BI",
+    "level": 50,
+    "category": "tool"
+  },
+  {
+    "name": "Spark",
+    "level": 50,
+    "category": "bigdata"
+  },
+  {
+    "name": "Hadoop",
+    "level": 60,
+    "category": "bigdata"
+  },
+  {
+    "name": "R",
+    "level": 70,
+    "category": "language"
+  },
+  {
+    "name": "Java",
+    "level": 75,
+    "category": "language"
+  },
+  {
+    "name": "HTML5",
+    "level": 90,
+    "category": "language"
+  },
+  {
+    "name": "CSS3",
+    "level": 90,
+    "category": "language"
+  },
+  {
+    "name": "Symfony",
+    "level": 50,
+    "category": "framework"
+  },
+  {
+    "name": "Laravel",
+    "level": 50,
+    "category": "framework"
+  },
+  {
+    "name": "Vue.js",
+    "level": 40,
+    "category": "framework"
+  },
+  {
+    "name": "Astro",
+    "level": 80,
+    "category": "framework"
+  },
+  {
+    "name": "Hive",
+    "level": 50,
+    "category": "bigdata"
+  },
+  {
+    "name": "MapReduce",
+    "level": 40,
+    "category": "bigdata"
+  },
+  {
+    "name": "HDFS",
+    "level": 60,
+    "category": "bigdata"
+  },
+  {
+    "name": "YARN",
+    "level": 40,
+    "category": "bigdata"
+  },
+  {
+    "name": "Git",
+    "level": 90,
+    "category": "tool"
+  },
+  {
+    "name": "GitHub",
+    "level": 90,
+    "category": "tool"
+  },
+  {
+    "name": "Linux",
+    "level": 65,
+    "category": "tool"
+  },
+  {
+    "name": "Power Automate",
+    "level": 50,
+    "category": "tool"
+  },
+  {
+    "name": "Excel",
+    "level": 60,
+    "category": "tool"
+  },
+  {
+    "name": "MongoDB Atlas",
+    "level": 70,
+    "category": "database"
+  },
+  {
+    "name": "TensorFlow / Keras",
+    "level": 65,
+    "category": "ia"
+  },
+  {
+    "name": "Tensorboard",
+    "level": 40,
+    "category": "ia"
+  },
+  {
+    "name": "Scikit-learn",
+    "level": 65,
+    "category": "ia"
+  },
+  {
+    "name": "Pandas",
+    "level": 80,
+    "category": "ia"
+  },
+  {
+    "name": "NumPy",
+    "level": 80,
+    "category": "ia"
+  },
+  {
+    "name": "Matplotlib",
+    "level": 60,
+    "category": "ia"
+  }
 ]

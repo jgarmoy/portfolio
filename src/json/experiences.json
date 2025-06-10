@@ -1,34 +1,30 @@
 [
   {
-    "title": "Programador Web",
-    "company": "IES Francisco Ayala",
-    "period": "2024",
-    "description":
-      "Desarrollo y mantenimiento de aplicaciones web para el centro educativo. Implementación de soluciones tecnológicas para mejorar procesos internos.",
+    "title": "Profesor Particular",
+    "company": "Autónomo",
+    "period": "06/2024- 02/2025",
+    "description": "Clases particulares de programación, desarrollo web y análisis de datos. Adaptación de contenidos según las necesidades específicas de cada alumno.",
     "type": "work"
   },
   {
-    "title": "Profesor Particular",
-    "company": "Autónomo",
-    "period": "2024-2025",
-    "description":
-      "Clases particulares de programación, desarrollo web y análisis de datos. Adaptación de contenidos según las necesidades específicas de cada alumno.",
+    "title": "Programador Web",
+    "company": "IES Francisco Ayala",
+    "period": "03/2024 - 06/2024",
+    "description": "Desarrollo y mantenimiento de aplicaciones web. Implementación de soluciones tecnológicas para mejorar procesos internos y automatizar las redes sociales.",
     "type": "work"
   },
   {
     "title": "Operario Cárnico",
-    "company": "Empresa Alimentaria",
-    "period": "2023",
-    "description":
-      "Experiencia en el sector alimentario que me permitió desarrollar habilidades de trabajo en equipo y eficiencia en entornos de alta presión.",
+    "company": "Avinatur",
+    "period": "06/2022 - 09/2022 & 06/2023 - 09/2023",
+    "description": "Experiencia en el sector alimentario que me permitió desarrollar habilidades de trabajo en equipo y eficiencia en entornos de alta presión.",
     "type": "work"
   },
   {
     "title": "Camarero",
-    "company": "Restaurante Local",
-    "period": "2022-2023",
-    "description":
-      "Atención al cliente y gestión de pedidos. Desarrollo de habilidades de comunicación y resolución de problemas en tiempo real.",
+    "company": "Choibap",
+    "period": "05/2025 - 06/2025",
+    "description": "Atención al cliente, donde el 50% son extranjeros. Gestión de pedidos y control de existencias.",
     "type": "work"
   }
 ]

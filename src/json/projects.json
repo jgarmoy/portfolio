@@ -1,37 +1,34 @@
 [
   {
-    "title": "Sistema de Análisis Predictivo",
-    "description":
-      "Plataforma de análisis predictivo para empresas utilizando algoritmos de machine learning para predecir tendencias de mercado.",
-    "technologies": ["Python", "React", "MongoDB", "TensorFlow", "Docker"],
-    "github": "https://github.com/juanmanuel/predictive-analysis",
-    "demo": "https://predictive-demo.example.com",
-    "image": "/placeholder.svg?height=300&width=500"
+    "title": "SilAnt",
+    "description": "Este proyecto implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
+    "technologies": ["python3", "Django", "PyQt6", "TensorFlow", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
+    "github": "https://github.com/pablovacasgarcia/SilAnt",
+    "image": "/images/projects/silant.png?height=300&width=500"
   },
   {
-    "title": "Dashboard de Big Data",
+    "title": "Reconocimiento de emociones con IA",
     "description":
-      "Dashboard interactivo para visualización de grandes volúmenes de datos con filtros personalizables y generación de informes.",
-    "technologies": ["Node.js", "D3.js", "Spark", "MySQL", "Power BI"],
-    "github": "https://github.com/juanmanuel/big-data-dashboard",
-    "image": "/placeholder.svg?height=300&width=500"
+      "Proyecto realizado por 3 integrantes para el reconocimiento de emociones mediante IA, utilizando un modelo de aprendizaje profundo para analizar imágenes y detectar emociones, para luego intercambiar las caras por el emoji correspondiente.",
+    "technologies": ["python3", "pandas", "TensorFlow/keras", "mediapipe", "OpenCV"],
+    "github": "https://github.com/Vtsfactory16/effective-engine",
+    "image": "/images/projects/ai_emotion_rekognition.png?height=300&width=500"
   },
   {
-    "title": "API RESTful para Gestión de Recursos",
+    "title": "Anime API",
     "description":
-      "API completa para gestión de recursos empresariales con autenticación JWT y documentación automática.",
-    "technologies": ["Django", "PostgreSQL", "Docker", "Swagger", "Redis"],
-    "github": "https://github.com/juanmanuel/resource-api",
-    "demo": "https://api-docs.example.com",
-    "image": "/placeholder.svg?height=300&width=500"
+      "Anime API es una REST API para cualquier persona que quiera realizar un proyecto, el cual va a poder usar Animes, Géneros y Usuarios en formato JSON. Anime API puede cambiar la base de datos, usar JSON de forma local, MySQL o MongoDB y se consigue mediante una inyección de dependencias.",
+    "technologies": ["Node.js", "Express", "Astro", "React", "MySQL", "MongoDB", "TypeScript", "Tailwind", "HTML5", "CSS3"],
+    "github": "https://github.com/jgarmoy/api-web-proyecto-tfg",
+    "demo": "https://frontend-tfg-deploy.vercel.app/",
+    "image": "/images/projects/anime-api.png?height=300&width=500"
   },
   {
-    "title": "Aplicación Web Educativa",
+    "title": "Alquiler de Vehículos",
     "description":
-      "Plataforma educativa con sistema de gestión de contenidos, evaluaciones automáticas y seguimiento de progreso.",
-    "technologies": ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
-    "github": "https://github.com/juanmanuel/edu-platform",
-    "demo": "https://edu-platform.example.com",
-    "image": "/placeholder.svg?height=300&width=500"
+      "Proyecto del primer curso de la FP, donde se implementa un sistema de alquiler de vehículos. Donde se pueden añadir, eliminar y modificar clientes, vehículos y a partir de ambos, alquileres. Se puede utilizar tanto una base de datos local (XML), MariaDB y MongoDB, todo ello mediante una inyección de dependencias.",
+    "technologies": ["Java", "JavaFX", "XML", "MongoDB", "MariaDB"],
+    "github": "https://github.com/jgarmoy/AlquilerVehiculos-v4",
+    "image": "/images/projects/alquiler-vehiculos.png?height=300&width=500"
   }
 ]
