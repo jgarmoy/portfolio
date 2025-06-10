@@ -119,6 +119,7 @@ import { Icon } from 'astro-icon/components';
   
   // Manejar el menú móvil
   function setupMobileMenu() {
+    console.log("Estoy pulsando");
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');
@@ -179,11 +180,26 @@ import { Icon } from 'astro-icon/components';
     themeToggleMobile?.addEventListener('click', toggleTheme);
     
     // Configurar otras funcionalidades
-    setupMobileMenu();
+    //setupMobileMenu();
     setupScrollHeader();
+    console.log("Estoy escuchando");
+
   }
   
+  let inicializado = false;
   // Ejecutar al cargar la página
-  document.addEventListener('DOMContentLoaded', init);
-  document.addEventListener('astro:page-load', init);
+  document.addEventListener('DOMContentLoaded', () => {
+    if (inicializado) return;
+    inicializado = true;
+    init()
+  });
+  document.addEventListener('astro:page-load', () => {
+    if (inicializado) return;
+    inicializado = true;
+    init()
+  });
+
+  document.getElementById('mobile-menu-toggle')?.addEventListener('click', setupMobileMenu)
+
+  
 </script>
