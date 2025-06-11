@@ -2,7 +2,7 @@
   {
     "title": "SilAnt",
     "description": "Este proyecto implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
-    "technologies": ["python3", "Django", "PyQt6", "TensorFlow", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
+    "technologies": ["python3", "Django", "PyQt6", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
     "github": "https://github.com/pablovacasgarcia/SilAnt",
     "image": "/images/projects/silant.png?height=300&width=500"
   },
@@ -13,6 +13,13 @@
     "technologies": ["python3", "pandas", "TensorFlow/keras", "mediapipe", "OpenCV"],
     "github": "https://github.com/Vtsfactory16/effective-engine",
     "image": "/images/projects/ai_emotion_rekognition.png?height=300&width=500"
+  },
+  {
+    "title": "Web de AWS Rekognition",
+    "description": "Web que contiene una 4 funcionalidades que va alrededor de AWS Rekognition. La intención era conectarnos mediante la API pero debido a la falta de permisos, se simula el funcionamiento decargando el JSON a partir de una imagen.",
+    "technologies": ["python3", "Django", "AWS Rekognition", "OpenCV", "JSON", "pandas"],
+    "github": "https://github.com/jgarmoy/Apps_AWS_Rekognition",
+    "image": "/images/projects/AWS_Logo.jpg?height=300&width=500"
   },
   {
     "title": "Anime API",
