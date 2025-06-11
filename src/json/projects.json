@@ -16,7 +16,7 @@
   },
   {
     "title": "Web de AWS Rekognition",
-    "description": "Web que contiene una 4 funcionalidades que va alrededor de AWS Rekognition. La intención era conectarnos mediante la API pero debido a la falta de permisos, se simula el funcionamiento decargando el JSON a partir de una imagen.",
+    "description": "Web que contiene una 4 funcionalidades que va alrededor de AWS Rekognition. La intención era conectarnos mediante la API pero debido a la falta de permisos, se simula el funcionamiento decargando el JSON a partir de una imagen para luego difuminar el rostro de un menor por ejemplo.",
     "technologies": ["python3", "Django", "AWS Rekognition", "OpenCV", "JSON", "pandas"],
     "github": "https://github.com/jgarmoy/Apps_AWS_Rekognition",
     "image": "/images/projects/AWS_Logo.jpg?height=300&width=500"
