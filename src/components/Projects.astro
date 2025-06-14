@@ -10,7 +10,7 @@ import projects from '../json/projects.json';
     </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
       {projects.map((project) => (
-        <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300 reveal">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300 reveal flex flex-col">
           <div class="h-56 lg:h-64 overflow-hidden">
             <img
               src={project.image || "/images/projects/placeholder.png?height=300&width=500"}
@@ -18,7 +18,7 @@ import projects from '../json/projects.json';
               class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <div class="p-8">
+          <div class="p-8 flex flex-col flex-grow">
             <h3 class="text-xl lg:text-2xl font-bold mb-4 text-gray-800 dark:text-white">{project.title}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">{project.description}</p>
             <div class="flex flex-wrap gap-2 mb-6">
@@ -28,7 +28,7 @@ import projects from '../json/projects.json';
                 </span>
               ))}
             </div>
-            <div class="flex justify-between">
+            <div class="mt-auto flex justify-between">
               {project.github && (
                 <a 
                   href={project.github} 
