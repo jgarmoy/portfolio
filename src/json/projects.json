@@ -4,7 +4,7 @@
     "description": "Este proyecto implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
     "technologies": ["python3", "Django", "PyQt6", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
     "github": "https://github.com/pablovacasgarcia/SilAnt",
-    "image": "/images/projects/silant.png?height=300&width=500"
+    "image": "/images/projects/silant.jpg?height=300&width=500"
   },
   {
     "title": "Reconocimiento de emociones con IA",
@@ -12,7 +12,7 @@
       "Proyecto realizado por 3 integrantes para el reconocimiento de emociones mediante IA, utilizando un modelo de aprendizaje profundo para analizar imágenes y detectar emociones, para luego intercambiar las caras por el emoji correspondiente.",
     "technologies": ["python3", "pandas", "TensorFlow/keras", "mediapipe", "OpenCV"],
     "github": "https://github.com/Vtsfactory16/effective-engine",
-    "image": "/images/projects/ai_emotion_rekognition.png?height=300&width=500"
+    "image": "/images/projects/ai_emotion_rekognition.jpg?height=300&width=500"
   },
   {
     "title": "Web de AWS Rekognition",
@@ -28,7 +28,7 @@
     "technologies": ["Node.js", "Express", "Astro", "React", "MySQL", "MongoDB", "TypeScript", "Tailwind", "HTML5", "CSS3"],
     "github": "https://github.com/jgarmoy/api-web-proyecto-tfg",
     "demo": "https://frontend-tfg-deploy.vercel.app/",
-    "image": "/images/projects/anime-api.png?height=300&width=500"
+    "image": "/images/projects/anime-api.jpg?height=300&width=500"
   },
   {
     "title": "Alquiler de Vehículos",
@@ -36,6 +36,6 @@
       "Proyecto del primer curso de la FP, donde se implementa un sistema de alquiler de vehículos. Donde se pueden añadir, eliminar y modificar clientes, vehículos y a partir de ambos, alquileres. Se puede utilizar tanto una base de datos local (XML), MariaDB y MongoDB, todo ello mediante una inyección de dependencias.",
     "technologies": ["Java", "JavaFX", "XML", "MongoDB", "MariaDB"],
     "github": "https://github.com/jgarmoy/AlquilerVehiculos-v4",
-    "image": "/images/projects/alquiler-vehiculos.png?height=300&width=500"
+    "image": "/images/projects/alquiler-vehiculos.jpg?height=300&width=500"
   }
 ]
