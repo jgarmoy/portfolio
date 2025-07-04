@@ -16,9 +16,10 @@
   },
   {
     "title": "Web de AWS Rekognition",
-    "description": "Web que contiene una 4 funcionalidades que va alrededor de AWS Rekognition. La intención era conectarnos mediante la API pero debido a la falta de permisos, se simula el funcionamiento decargando el JSON a partir de una imagen para luego difuminar el rostro de un menor por ejemplo.",
+    "description": "Web que contiene una 4 funcionalidades que va alrededor de AWS Rekognition. La intención era conectarnos mediante la API pero debido a la falta de permisos, se simula el funcionamiento decargando el JSON a partir de una imagen para luego difuminar el rostro de un menor por ejemplo. Nota: Render desactiva el dominio por inactividad, por lo que puede tardar entre 1 y 2 minutos en cargar.",
     "technologies": ["python3", "Django", "AWS Rekognition", "OpenCV", "JSON", "pandas"],
     "github": "https://github.com/jgarmoy/Apps_AWS_Rekognition",
+    "demo": "https://apps-aws-rekognition.onrender.com",
     "image": "/images/projects/AWS_Logo.jpg?height=300&width=500"
   },
   {
