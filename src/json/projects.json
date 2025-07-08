@@ -1,7 +1,7 @@
 [
   {
     "title": "SilAnt",
-    "description": "Este proyecto realizado con 3 compañeros de clase (https://github.com/pablovacasgarcia/SilAnt),implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
+    "description": "Este proyecto, implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
     "technologies": ["python3", "Django", "PyQt6", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
     "github": "https://github.com/jgarmoy/SilAnt",
     "image": "/images/projects/silant.jpg?height=300&width=500"
