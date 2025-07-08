@@ -1,5 +1,12 @@
 [
   {
+    "title": "Calculadora Android (Java + XML)",
+    "description": "Desarrollé una aplicación de calculadora para Android utilizando Java y diseño en XML. El proyecto incluye operaciones básicas, validación de entradas y una interfaz adaptable a distintas resoluciones. Se entregó como producto funcional a cliente privado.",
+    "technologies": ["Java", "Gradle", "XML", "Android Studio"],
+    "github": "https://github.com/jgarmoy/Calculadora",
+    "image": "/images/projects/calculadora-android.jpg?height=300&width=500"
+  },
+  {
     "title": "SilAnt",
     "description": "Este proyecto, implementa un sistema de detección de gestos y mirada utilizando modelos de aprendizaje profundo y herramientas de visión por computadora. Incluye una API basada en Django para predicciones de gestos y una aplicación para la detección en tiempo real.",
     "technologies": ["python3", "Django", "PyQt6", "OpenCV", "TensorFlow/keras", "mediapipe", "pandas"],
